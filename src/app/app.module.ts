@@ -16,6 +16,16 @@ import { InviteComponent } from './invite/invite.component';
 import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BioComponent } from './bio/bio.component';
 import { InfoComponent } from './info/info.component';
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes: Routes = [
+  { path: 'profile', component: UserProfileComponent },
+  { path: 'org-input', component: PushInfoComponent },
+  {
+    path: 'search',
+    component: SearchProfileComponent,
+  },
+  { path: '**', component: HomeComponent }
+];
 
 @NgModule({
   declarations: [
@@ -33,8 +43,9 @@ import { InfoComponent } from './info/info.component';
     InfoComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
-
+    BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true })
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
