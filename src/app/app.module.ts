@@ -11,6 +11,7 @@ import { HomeComponent } from './home/home.component';
 import { ReviewComponent } from './review/review.component';
 import { SearchProfileComponent } from './search-profile/search-profile.component';
 import { PushInfoComponent } from './push-info/push-info.component';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PushInfoComponent } from './push-info/push-info.component';
     HomeComponent,
     ReviewComponent,
     SearchProfileComponent,
-    PushInfoComponent
+    PushInfoComponent,
+    TestimonialComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
