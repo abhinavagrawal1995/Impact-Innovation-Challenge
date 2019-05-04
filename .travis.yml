@@ -16,7 +16,7 @@ install:
   - npm install
 
 script:
-  - ng build --prod --base-href http://abhinavagrawal.in/iid/
+  - ng build --base-href http://abhinavagrawal.in/Impact-Innovation-Challenge/
 
 deploy:
   provider: pages
