@@ -12,6 +12,7 @@ import { ReviewComponent } from './review/review.component';
 import { SearchProfileComponent } from './search-profile/search-profile.component';
 import { PushInfoComponent } from './push-info/push-info.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
+import { InviteComponent } from './invite/invite.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
     ReviewComponent,
     SearchProfileComponent,
     PushInfoComponent,
-    TestimonialComponent
+    TestimonialComponent,
+    InviteComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule

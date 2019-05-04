@@ -8,7 +8,7 @@ body {
 }
 
 .testimonials {
-  margin: 200px auto 100px;
+  margin: 10px auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-gap: 20px;
@@ -16,7 +16,7 @@ body {
 
 .testimonials .card {
   position: relative;
-  margin: 0 auto;
+  margin: 25px auto;
   background: #333;
   padding: 20px;
   box-sizing: border-box;
