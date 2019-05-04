@@ -13,6 +13,9 @@ import { SearchProfileComponent } from './search-profile/search-profile.componen
 import { PushInfoComponent } from './push-info/push-info.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { InviteComponent } from './invite/invite.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { BioComponent } from './bio/bio.component';
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { InviteComponent } from './invite/invite.component';
     SearchProfileComponent,
     PushInfoComponent,
     TestimonialComponent,
-    InviteComponent
+    InviteComponent,
+    TestimonialsComponent,
+    BioComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule
