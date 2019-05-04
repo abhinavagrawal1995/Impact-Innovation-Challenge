@@ -1,5 +1,4 @@
 import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-import { currentId } from 'async_hooks';
 
 @Component({
   selector: 'app-testimonial',
