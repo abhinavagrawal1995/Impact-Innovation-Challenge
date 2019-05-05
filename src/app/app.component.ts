@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Disease } from './disease';
 import { NavigationService } from './services/navigation.service';
 
 @Component({
