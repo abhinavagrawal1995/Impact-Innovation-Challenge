@@ -1,0 +1,71 @@
+h3 {
+    color: #328ded;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .md-chip-closed {
+    background-color: rgba(0, 0, 0, .10)
+  }
+  
+  .md-chip-wrapper {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .btn {
+    float: right;
+    margin-top: 3em;
+  }
+  
+  .md-chip-wrapper .md-chip-closed {
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+  }
+  
+  .md-chip-closed {
+    border-radius: 32px;
+    height: 32px;
+    width: auto;
+    padding-right: 12px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    line-height: 32px;
+    transition: 0.2s ease;
+    list-style: none;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+  }
+  
+  .md-chip-closed img {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    float: left;
+  }
+  
+  .md-chip-closed .md-chip-closed-text {
+    margin-left: 8px;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.54);
+    font-weight: 400;
+  }
+  
+  .md-chip-closed:focus {
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3), 1px 0px 3px rgba(0, 0, 0, 0.1), -1px 0px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .md-chip-closed:active {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-chip {
+    height: 24px;
+    border: none;
+    background: transparent;
+  }
+  
