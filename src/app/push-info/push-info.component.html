@@ -1,4 +1,8 @@
-<div class="outer container">
+<div class="outer container" *ngIf="done">
+  <app-success></app-success>
+  <button type="submit" class="btn btn-primary" (click)="back()">Back</button>
+</div>
+<div class="outer container" *ngIf="!done">
   <h4>Roots Young Adult Shelter</h4>
   <h3>Group Rollcall</h3>
   <hr />
@@ -40,5 +44,5 @@
       </ul>
     </div>
   </form>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="success()">Submit</button>
 </div>
