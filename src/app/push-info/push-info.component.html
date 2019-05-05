@@ -1,4 +1,8 @@
-<div class="outer container">
+<div class="outer container" *ngIf="done">
+  <app-success></app-success>
+  <button type="submit" class="btn btn-primary" (click)="back()">Back</button>
+</div>
+<div class="outer container" *ngIf="!done">
   <h4>Roots Young Adult Shelter</h4>
   <h3>Group Rollcall</h3>
   <hr />
@@ -25,20 +29,17 @@
       <br>
       <label>Individuals</label>
       <ul class="md-chip-wrapper">
-        <li class="md-chip-closed">
+        <li class="md-chip-closed" *ngFor="let person of persons">
           <img src="http://lorempixel.com/400/200/sports/2/" alt="IMG" />
-          <span class="md-chip-closed-text">Andi Semler (IFP8KHYUUT)</span>
+          <span class="md-chip-closed-text">{{person.name}} ({{person.id}})</span>
         </li>
         <li class="md-chip-closed">
-          <img src="http://lorempixel.com/400/200/sports/1/" alt="IMG" />
-          <span class="md-chip-closed-text">Simeon Elsa (01Q39HJIOM)</span>
-        </li>
-        <li class="md-chip-closed">
-          <img src="https://www.pngarts.com/files/3/Plus-Symbol-Transparent-Images.png" alt="IMG" />
-          <span class="md-chip-closed-text"><input type="text" class="add-chip"></span>
+          <i class="fas fa-plus" (click)="entry()" style="margin-left:3px"></i>
+          <span class="md-chip-closed-text"><input type="text" class="add-chip" name="entry" [(ngModel)]="newPerson"
+              (keyup.enter)="entry()"></span>
         </li>
       </ul>
     </div>
   </form>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" (click)="success()">Submit</button>
 </div>

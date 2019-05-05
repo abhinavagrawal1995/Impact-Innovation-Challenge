@@ -18,6 +18,7 @@ import { BioComponent } from './bio/bio.component';
 import { InfoComponent } from './info/info.component';
 import { RouterModule, Routes } from '@angular/router';
 import { CheckinsComponent } from './checkins/checkins.component';
+import { SuccessComponent } from './success/success.component';
 const appRoutes: Routes = [
   { path: 'profile', component: UserProfileComponent },
   { path: 'reporting', component: PushInfoComponent },
@@ -42,7 +43,8 @@ const appRoutes: Routes = [
     TestimonialsComponent,
     BioComponent,
     InfoComponent,
-    CheckinsComponent
+    CheckinsComponent,
+    SuccessComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(
