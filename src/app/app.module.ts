@@ -13,6 +13,20 @@ import { SearchProfileComponent } from './search-profile/search-profile.componen
 import { PushInfoComponent } from './push-info/push-info.component';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { InviteComponent } from './invite/invite.component';
+import { TestimonialsComponent } from './testimonials/testimonials.component';
+import { BioComponent } from './bio/bio.component';
+import { InfoComponent } from './info/info.component';
+import { RouterModule, Routes } from '@angular/router';
+import { CheckinsComponent } from './checkins/checkins.component';
+const appRoutes: Routes = [
+  { path: 'profile', component: UserProfileComponent },
+  { path: 'org-input', component: PushInfoComponent },
+  {
+    path: 'search',
+    component: SearchProfileComponent,
+  },
+  { path: '**', component: HomeComponent }
+];
 
 @NgModule({
   declarations: [
@@ -24,11 +38,16 @@ import { InviteComponent } from './invite/invite.component';
     SearchProfileComponent,
     PushInfoComponent,
     TestimonialComponent,
-    InviteComponent
+    InviteComponent,
+    TestimonialsComponent,
+    BioComponent,
+    InfoComponent,
+    CheckinsComponent
   ],
   imports: [
-    BrowserModule, FormsModule, HttpClientModule
-
+    BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(
+      appRoutes,
+      { enableTracing: true })
   ],
   providers: [NavigationService],
   bootstrap: [AppComponent]
