@@ -1,5 +1,76 @@
-.outer {
-    height: 100%;
-    width: 200%;
-    background-image: url("https://i.imgur.com/s3m33vp.jpg");
+#lead {
+  position: relative;
+  background: url('../../assets/back.jpg');
+  background-size: cover;
+  height: calc(100% - 60px);
+}
+
+#lead-content {
+  position: relative;
+  z-index: 10;
+  padding-top: 20%;
+  text-align: center
+}
+
+#lead-content h1,
+#lead-content h2 {
+  margin: 0
+}
+
+#lead-content h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 5em;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  line-height: .9em
+}
+
+#lead-content h2 {
+  color: #a0cfee;
+  font-weight: 500;
+  font-size: 2.25em;
+  margin-bottom: 15px
+}
+
+#lead-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(64, 132, 235, 0.16);
+  z-index: 1
+}
+
+#lead-down {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  bottom: 15px;
+  color: #fff
+}
+
+#lead-down span {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 3px solid #a0cfee;
+  text-align: center
+}
+
+#lead-down i {
+  -webkit-animation: pulsate 1.5s ease;
+  animation: pulsate 1.5s ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  padding-top: 5px
 }

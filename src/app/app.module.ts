@@ -26,7 +26,7 @@ const appRoutes: Routes = [
     path: 'search',
     component: SearchProfileComponent,
   },
-  { path: '**', component: UserProfileComponent }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
