@@ -21,6 +21,7 @@ h3 {
 .md-chip-wrapper .md-chip-closed {
   float: left;
   margin-right: 10px;
+  margin-top: 8px;
 }
 
 .md-chip-closed {
