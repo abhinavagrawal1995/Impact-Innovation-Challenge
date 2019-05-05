@@ -20,12 +20,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { CheckinsComponent } from './checkins/checkins.component';
 const appRoutes: Routes = [
   { path: 'profile', component: UserProfileComponent },
-  { path: 'org-input', component: PushInfoComponent },
+  { path: 'reporting', component: PushInfoComponent },
   {
     path: 'search',
     component: SearchProfileComponent,
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: UserProfileComponent }
 ];
 
 @NgModule({

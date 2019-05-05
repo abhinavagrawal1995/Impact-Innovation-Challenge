@@ -2,11 +2,14 @@
   <div class="row">
     <div class="col-md-12">
       <img src="assets/logo.png" alt="Logo" class="img-responsive logo float-left">
-      <span class="float-left text" (click)="toggle(false)" [ngClass]="{'current':!navService.isReviewer}">
-        Request Review
-      </span>
-      <span class="float-left text" (click)="navService.show('Profile')" [ngClass]="{'current':navService.isReviewer}">
+      <span class="float-left text" routerLink="profile">
         Profile
+      </span>
+      <span class="float-left text" routerLink="reporting">
+        Shelter Reporting
+      </span>
+      <span class="float-left text" routerLink="search">
+        Shelter Search
       </span>
       <span class="float-right text logo-text">
         Inlusive ID
