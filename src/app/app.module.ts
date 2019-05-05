@@ -17,6 +17,7 @@ import { TestimonialsComponent } from './testimonials/testimonials.component';
 import { BioComponent } from './bio/bio.component';
 import { InfoComponent } from './info/info.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CheckinsComponent } from './checkins/checkins.component';
 const appRoutes: Routes = [
   { path: 'profile', component: UserProfileComponent },
   { path: 'org-input', component: PushInfoComponent },
@@ -40,7 +41,8 @@ const appRoutes: Routes = [
     InviteComponent,
     TestimonialsComponent,
     BioComponent,
-    InfoComponent
+    InfoComponent,
+    CheckinsComponent
   ],
   imports: [
     BrowserModule, FormsModule, HttpClientModule, RouterModule.forRoot(

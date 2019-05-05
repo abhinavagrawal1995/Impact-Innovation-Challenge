@@ -2,6 +2,12 @@
   margin-top: 30px;
 }
 
+.profile-text {
+  color: #328ded;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
 .profile .table-properties th {
   font-weight: normal;
   width: 15rem;
@@ -90,8 +96,8 @@ input:checked+label {
   }
 }
 
-i{
-    margin-right: 5px;  
+i {
+  margin-right: 5px;
 }
 
 .testimonials {
